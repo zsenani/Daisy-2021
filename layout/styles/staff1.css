@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url("fontawesome-free/css/fontawesome-all.min.css");
+@import url("framework.css");
+
+#avg1,#avg2,#avg3,#avg4,#avg5{
+	display:inline;
+	margin-bottom:2px;
+	font-size:13px;
+}
+
+.content-mid {
+ padding: 5px 14px 5px 14px;
+float:left;
+}
+
+#staff{
+	text-align:center;
+	font-size:25px;
+}
+.data{	
+text-align:center;
+}
+
+.profile{height:200px; width:200px; margin-left:35px;}
+#rightcolumn {
+/* border: 1px solid red;*/
+ margin: 0px 0px 0px 0px;
+ display: inline; /* IE Hack */
+ width: 720px;
+ float: left;
+ min-height: 300px;
+}
+* html #rightcolumn {height:300px} /* IE Min-Height Hack */ 
+
+
+
+/* Three column layout */
+.side{
+	
+	float:right;
+	margin-right:60px;
+	
+}
+
+.middle {
+  margin-top:0px;
+  margin-bottom:40px;
+  margin-left:60px;
+  float: left;
+  width: 20px;
+  
+  
+}
+
+
+
+
+
+
+hr{width:690px;}
+
+
+/* Tables
+--------------------------------------------------------------------------------------------------------------- */
+table,tbody,tfoot,thead {  display:flex;margin-left:auto; margin-right:auto;}
+thead,tfoot{table-layout:auto;}
+tbody th #cc{background-color:#FEF5ED;}
+table{width:100%; margin-bottom:0px;}
+
+
+
+#ffr{float:right;}
+
+
+
+.faicon-email {  height:36px; line-height:21px; font-size:20px;margin:8px 5px 2px 9px; padding:2px 2px 0 0; text-align:center;}
+.faico {color:inherit; }
+.faico:hover{color:#FFFFFF;}
+
