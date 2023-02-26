@@ -1,2 +1,3 @@
 # Daisy-2021
-Restaurant Web Application
+Restaurant Management Web Application
+HTML, CSS, and Javascript
