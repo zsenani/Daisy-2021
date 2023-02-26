@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+<meta charset="utf-8"/>
+<title>Reservation</title>
+
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="layout/styles/reservationlayout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" id="switcher-id" href="">
+<script src="reservationJS.js" ></script>
+<script src="OrderButton.js" async></script>
+</head>
+
+<body>
+<div class="row0">
+  <div id="topbar" class="hoc clear ">
+  <div class="theme-switches fl_left">
+            <div data-theme="orngTheme" class="switch" id="switch-1"></div>
+            <div data-theme="othTheme" class="switch" id="switch-2"></div>
+        </div>
+      <ul class="nospace">
+        <li id="searchform">
+          <div>
+            <form >
+              
+                <input type="text" placeholder="Enter search term&hellip;">
+             
+            </form>
+          </div>
+        </li>
+      </ul>
+  </div>
+</div>
+
+
+<div class="row1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+      <img src ='img/logo.png' alt='logo'>
+    </div>
+	<div class="topnav" id="myTopnav">
+  <a  href="index.html">Home</a>
+  <a class="drop" href="menu.html">Menu</a>
+  <a href="shop.html">Orders</a>
+  <a href="Staff.html">Staff</a>
+  <a class="active" href="Reservation.html">Reservation</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+   
+    <nav id="mainav" class="fl_right"> 
+      <ul>
+        <li><a href="index.html">Home</a></li>
+         <li><a class="drop" href="menu.html">Menu</a>
+           <ul>
+            <li><a href="mealMenu.html">Meals</a></li>
+            <li><a href="sweetsMenu.html">Sweets</a></li>
+            <li><a href="drinksMenu.html">Drinks</a></li>
+           </ul>
+          </li>
+       
+          <li><a href="shop.html">Orders</a></li>
+         <li><a href="Staff.html">Staff</a></li>
+       <li class="active"><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<ul class="collapsed row3" >
+  <li><a href="index.html" accesskey="H">Home</a></li>
+  <li>Reservation</li>
+</ul>
+
+<main>
+<div class=" row3">
+
+  <img  id='backgroundPhoto' src="img/daisy4.png" alt="background" >
+  <img id='backgroundPhoto2' src="img/daisy4.png" alt="background" >
+
+  <div class="imgSize container "> 
+
+<table id='table' >
+<tr>
+<th><img  src='img/table4-5.png' alt='Daisy Plan' onclick='validateForm(this,2);' id='table4' ></th>
+<th><img  src='img/table3.png' alt='Daisy Plan' onclick='validateForm(this,4);' id='table3' ></th>
+<th><img  src='img/table2-22.png' alt='Daisy Plan' onclick='validateForm(this,4);' id='table2' ></th>
+<th><img  src='img/table1-4.jpg' alt='Daisy Plan' onclick='validateForm(this,4);' id='table1'></th>
+</tr>
+
+ <tr>
+  <th><img  src='img/table5-2.png' alt='Daisy Plan' onclick='validateForm(this,4);' id='table5' ></th>
+  <th><img  src='img/table6.png' alt='Daisy Plan'onclick='validateForm(this,4);'  id='table6'></th>
+  <th rowspan=2 colspan=2><img  src='img/table7-2.png' alt='Daisy Plan' onclick='validateForm(this,6);' id='table7' >
+
+</tr>
+
+<tr>
+  <th colspan=2><br><img  src='img/table88.png' alt='Daisy Plan' onclick='validateForm(this,2); ' id='table8'></th>
+</tr>
+<tr id="tag">
+  <th ><img  src='img/availability22.png' alt='Daisy Plan'></th>
+ 
+</tr>
+
+<script>
+if(localStorage.getItem("Booked1")=="table1")
+		document.getElementById("table1").src="img/table111.png";
+if(localStorage.getItem("Booked2")=="table2")
+		document.getElementById("table2").src="img/table22.png";
+if(localStorage.getItem("Booked3")=="table3")
+		document.getElementById("table3").src="img/table3222.jpeg";
+if(localStorage.getItem("Booked4")=="table4")
+		document.getElementById("table4").src="img/table4-5222.jpeg";
+if(localStorage.getItem("Booked5")=="table5")
+		document.getElementById("table5").src="img/table5-222.jpeg";
+if(localStorage.getItem("Booked6")=="table6")
+		document.getElementById("table6").src="img/table66.png";
+if(localStorage.getItem("Booked7")=="table7")
+		document.getElementById("table7").src="img/table7-222.jpeg";
+if(localStorage.getItem("Booked8")=="table8")
+		document.getElementById("table8").src="img/table8.png";
+</script>
+
+</table>
+<form name="tableInfo">				
+		<div  >
+<pre>    <label class="label"><br>Number Of Guests:<br><input class='buttonStyle' type="number" name="numberOfGuests"  ></label>   <!--value="1"-->        
+ 
+           
+</div>
+</form>
+</div>
+</div>
+
+
+<div class="row2">
+<div class="imgSize container clear"> 
+<div id="input2"  >
+
+<form name="customerInfo">
+              <fieldset>
+                <legend>Customer Information:</legend>
+<label><br><br> Customer Name:<input  type="text" name="name" ></label>
+			<label><br> Phone Number: <input type="tel" name="phone" ></label>
+<br><input  id="button" type="submit" onclick="submit1(); return false;" accesskey="E">
+</fieldset>
+</form>
+</div> 
+</div>
+</div>
+</main>
+
+<div class=" row5">
+<footer>
+  <div id="copyright" class="hoc clear"> 
+   <div >
+      
+    
+     <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+		<li><a class="faicon-instagram" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li> <a  id="backtotop" href='#'> <i class="fas fa-chevron-circle-up"></i></a></li>
+      </ul>
+     
+      
+     
+    </div>
+  </div>
+  </footer>
+</div>
+     <script src="themeC.js"></script>
+
+</body>
+</html>
+

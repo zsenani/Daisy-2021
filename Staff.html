@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Staff Rating</title>
+	<link href="layout/styles/staff1.css" rel="stylesheet" type="text/css" media="all">
+	<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" id="switcher-id" href="">
+	
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"> </script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="staffJq.js"></script>
+
+</head>
+
+<body >
+
+	<div class="wrapper row0">
+		<div id="topbar" class="hoc clear">
+		<div class="theme-switches fl_left">
+            <div data-theme="orngTheme" class="switch" id="switch-1"></div>
+            <div data-theme="othTheme" class="switch" id="switch-2"></div>
+        </div>
+			<div class="fl_left"> 
+			</div>
+		<div class="fl_right"> 
+			<ul class="nospace">
+			
+			<li id="searchform">
+			<div>
+            <form action="#" method="post">
+              
+                <input type="text" placeholder="Enter search term&hellip;">
+                <button type="submit"><i class="fas fa-search"></i></button>
+              
+            </form>
+			</div>
+			</li>
+			
+			</ul>
+
+		</div>
+		</div>
+	</div>
+
+	<div class="wrapper row1">
+		<header id="header" class="hoc clear">
+		<div id="logo" class="fl_left"> 
+		<img id = 'logoo' src ='img/logo.png' alt='logo'>
+		</div>
+		
+		<div class="topnav" id="myTopnav">
+  <a  href="index.html">Home</a>
+  <a class="drop" href="menu.html">Menu</a>
+  <a href="shop.html">Orders</a>
+  <a class="active" href="Staff.html">Staff</a>
+  <a href="Reservation.html">Reservation</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+   
+   <nav id="mainav" class="fl_right"> 
+      <ul>
+        <li><a href="index.html">Home</a></li>
+         <li><a class="drop" href="menu.html">Menu</a>
+           <ul>
+            <li><a href="mealMenu.html">Meals</a></li>
+            <li><a href="sweetsMenu.html">Sweets</a></li>
+            <li><a href="drinksMenu.html">Drinks</a></li>
+           </ul>
+          </li>
+       
+          <li><a href="shop.html">Orders</a></li>
+         <li class="active"><a href="Staff.html">Staff</a></li>
+       <li ><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+    
+		</header>
+	</div>
+
+<main class="wrapper row3">
+<ul class="collapsed">
+  <li><a href="index.html">Home</a></li>
+  <li>Staff</li>
+</ul>
+<div class="backST bgded" >
+<table>
+<thead><tr><th></th></tr></thead>
+<tbody><tr><th>
+    <div id="rightcolumn">
+<br>
+      <!-- Start Main Content -->
+	  <div id='cc'>
+	  <br>
+      <p id="staff" class=' heading center ' >Staff Rating</p>
+	  <br>
+	  <br><div class="st-info">
+         <div class="content-mid">
+          <br>
+          <img class='profile' src="images/pf1.png"  alt="personal picture of staff" /> <br><br>
+		 <div class="side">
+		 <div class = "con">
+        <i class = "fa fa-star" aria-hidden = "true" id = "st1"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st2"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st3"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st4"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st5"></i>
+       </div>
+       <button type="button" onclick="averaga('avg1','1')">Average:</button>
+       <p id="avg1"></p>
+			<br>
+		</div></div>
+		<br><br> 
+		  <div class="data">
+		  
+		  <p class=' heading'>Staff#1</p>
+		  <p>Name: Norah Abdulaziz</p>
+		  <p>Job: Manager</p>
+		  <p>Age: 30 years old</p>
+		  <p>Experiance: 8 years</p> 
+		 
+		  <a class="faicon-email faico" href="https://accounts.google.com"><i class="fas fa-envelope"></i></a>
+		  </div>
+
+ 
+  <div class="middle bar-container"></div>
+    
+  
+
+ 
+ 
+
+
+	<br><br><br><hr> </div> 
+<br>
+      <!-- End Main Content -->
+	  <div class="st-info">
+        <div class="content-mid">
+          <br>
+          <img class='profile' src="images/pf2.png" alt="personal picture of staff" /> <br><br>
+		  <div class="side">
+		  <div class = "con">
+        <i class = "fa fa-star" aria-hidden = "true" id = "st6"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st7"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st8"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st9"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st10"></i>
+       </div>
+       <button type="button" onclick="averaga('avg2','2')">Average:</button>
+       <p id="avg2"></p>
+			<br>
+		</div></div>
+		<br><br>
+		  <div class="data">
+		  <p class=' heading'>Staff#2</p>
+		  <p>Name: Sarah Ahmad</p>
+		  <p>Job: Chef</p>
+		  <p>Age: 35 years old</p>
+		  <p>Experiance: 15 years</p> 
+		  <a class="faicon-email faico" href="https://accounts.google.com"><i class="fas fa-envelope"></i></a>
+		  <br>
+		  </div>
+	
+ 
+  <div class="middle bar-container">
+  </div>
+      
+  
+
+
+    <br><br><br><hr> </div>	  
+<br>
+
+      <!-- End Main Content -->
+      <!-- Start Main Content -->
+			<div class="st-info">
+              <div class="content-mid">
+          <br>
+          <img class='profile' src="images/pf3.png"  alt="personal picture of staff" /> <br><br>
+		  <div class="side">
+		  <div class = "con">
+        <i class = "fa fa-star" aria-hidden = "true" id = "st11"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st12"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st13"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st14"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st15"></i>
+       </div>
+       <button type="button" onclick="averaga('avg3','3')">Average:</button>
+       <p id="avg3"></p>
+			<br>
+		</div></div>
+		<br><br> 
+		  <div class="data">
+		  <p class=' heading'>Staff#3</p>
+		  <p>Name: Mariam Khalid</p>
+		  <p>Job: Waiter</p>
+		  <p>Age: 23 years old</p>
+		  <p>Experiance: 3 years</p> 
+		  <a class="faicon-email faico" href="https://accounts.google.com"><i class="fas fa-envelope"></i></a>
+		  <br>
+		  </div>
+	
+  
+  <div class="middle bar-container">
+</div>
+	
+	<br><br><br><hr> </div>
+	<br>
+      <!-- End Main Content -->
+	  <!-- Start Main Content -->
+				<div class="st-info">
+               <div class="content-mid">
+          <br>
+          <img class='profile' src="images/pf4.png" alt="personal picture of staff" /> <br><br>
+		  <div class="side">
+		  <div class = "con">
+        <i class = "fa fa-star" aria-hidden = "true" id = "st16"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st17"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st18"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st19"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st20"></i>
+       </div>
+       <button type="button" onclick="averaga('avg4','4')">Average:</button>
+       <p id="avg4"></p>
+			<br>
+		</div></div>
+		<br><br> 
+		  <div class="data">
+		  <p class=' heading'>Staff#4</p>
+		  <p>Name: Jehan sami</p>
+		  <p>Job: waiter</p>
+		  <p>Age: 25 years old</p>
+		  <p>Experiance: 4 years</p>
+		  <a class="faicon-email faico" href="https://accounts.google.com"><i class="fas fa-envelope"></i></a>
+		  <br>
+		  </div>
+		<div class="side">
+   
+  </div>
+
+  <div class="middle bar-container">
+
+    
+  
+</div>
+	
+	<br><br><br><hr> </div>
+	<br>
+      <!-- End Main Content -->
+	  <!-- Start Main Content -->
+				<div class="st-info">
+               <div class="content-mid">
+          <br>
+          <img class='profile' src="images/pf5.png"  alt="personal picture of staff" /> <br><br>
+		 <div class="side">
+		 <div class = "con">
+        <i class = "fa fa-star" aria-hidden = "true" id = "st21"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st22"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st23"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st24"></i>
+        <i class = "fa fa-star" aria-hidden = "true" id = "st25"></i>
+       </div>
+       <button type="button" onclick="averaga('avg5','5')">Average:</button>
+       <p id="avg5"></p>
+			<br>
+		</div></div>
+		<br><br> 
+		  <div class="data">
+		  <p class=' heading'>Staff#5</p>
+		  <p>Name: Samiah Waleed</p>
+		  <p>Job: Chef assistant</p>
+		  <p>Age: 24 years old</p>
+		  <p>Experiance: 3 years</p> 
+		  <a class="faicon-email faico" href="https://accounts.google.com"><i class="fas fa-envelope"></i></a>
+		  <br>
+		  </div>
+		<div class="side">
+   
+  </div>
+ 
+  <div class="middle bar-container">
+</div>
+	
+	<br><br> </div>
+	<br><br>
+      <!-- End Main Content -->
+    </div><br></div>
+    <!-- End Right Column -->
+  
+</th>
+</tr>
+</tbody>
+<tfoot><tr><th></th></tr></tfoot>
+
+</table>
+
+</div>
+
+</main>
+
+<div class="wrapper row5">
+<footer>
+  <div id="copyright" class="hoc clear"> 
+   <div class="one_quarter first">  
+     <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+		<li><a class="faicon-instagram" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li> <a  id="backtotop" href='#'> <i class="fas fa-chevron-circle-up"></i></a></li>
+      </ul>
+     
+    </div>
+  </div>
+  </footer>
+</div>
+
+     <script src="themeC.js"></script>
+
+
+</body>
+</html>

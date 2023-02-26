@@ -1,0 +1,44 @@
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{ background-color:#FEF5ED;}
+a{color:blue;}
+a:hover{color:gray;}
+hr{border-color:#D7D7D7;}
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+
+/* Rows */
+.row0{color:#474747; background-color:#FEF5ED;}
+.row1{color:#FFFFFF; background-color:#ffdfaf;}/*bar */
+.row2{color:#474747; background-color:#F9E4C8;}
+.row3{color:#474747; background-color:#FEF5ED;}
+.row5, .row5 a{color:#A5A6AA; background-color:#FEF5ED;}
+#m ,#m a{color:#A5A6AA; background-color:#F9E4C8;}
+
+/* Top Bar */
+#topbar #searchform{color:#f7a440;float: right;}
+#topbar #searchform:hover{}
+#topbar #searchform input{color:#FFFFFF; background:#f2bb7b;}
+#topbar #searchform button{color:#FFFFFF; background:transparent;}
+
+/* Navigation */
+#mainav li a,.topnav a{color:inherit; border-color:transparent;}
+#mainav .active a, #mainav a:hover, #mainav li:hover  a,.topnav a:hover{color:#FFFFFF; background-color:#f2bb7b;}
+#mainav li li a, #mainav .active li a,.topnav a.active{color:#FFFFFF; background-color:#f2bb7b;/* #FF3F4A */ border-color:#f7a440;}
+#mainav li li:hover  a, #mainav .active .active  a{color:#FFFFFF; background-color:#f7a440; border-color:#f2bb7b;}
+
+/* Menu */
+.link a {background-color:#F8D7CA;}
+.services-inner-box {box-shadow : 0 7px 10px #F9E4C8;}
+.featured-food .food-item {background-color : #F9E4C8;}
+
+/* table */
+
+
+tbody th #cc{background-color:#FEF5ED;}
+
+.backST {background-image:url('../images/back21.jfif');}
+#backgroundPhoto .backST {background-image:url('img/daisy3.png');}
+#backgroundPhoto2 .backST {background-image:url('img/daisy3.png');}
+
+#table #tag th{background-color: #FEF5ED; height: 7px; width:5%;}

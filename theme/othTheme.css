@@ -1,0 +1,43 @@
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{ background-color:#F5EDFF;}
+a{color:blue;}
+a:hover{color:gray;}
+hr{border-color:#D7D7D7;}
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+
+/* Rows */
+.row0{color:#474747; background-color:#F5EDFF;}
+.row1{color:#FFFFFF; background-color:#EDE1FB;}/*bar old=#ffdfaf*/
+.row2{color:#474747; background-color:#EDE1FB;}
+.row3{color:#474747; background-color:#F5EDFF;}
+.row5, .row5 a{color:#A5A6AA; background-color:#F5EDFF;}
+#m ,#m a{color:#A5A6AA; background-color:#EDE1FB;}
+
+/* Top Bar */
+#topbar #searchform{color:#DABEF9;float: right;}
+#topbar #searchform:hover{}
+#topbar #searchform input{color:#FFFFFF; background:#DABEF9;}
+#topbar #searchform button{color:#FFFFFF; background:transparent;}
+
+/* Navigation */
+#mainav li a,.topnav a{color:inherit; border-color:transparent;}
+#mainav .active a, #mainav a:hover, #mainav li:hover  a,.topnav a:hover{color:#FFFFFF; background-color:#DABEF9;}
+#mainav li li a, #mainav .active li a,.topnav a.active{color:#FFFFFF; background-color:#DABEF9;/* #FF3F4A */ border-color:#815ac0;}
+#mainav li li:hover  a, #mainav .active .active  a{color:#FFFFFF; background-color:#BF9BE7; border-color:#a06cd5;}
+#mainav li{color:#BF9BE7}
+
+/* menu pages colors */
+.link a {background-color:#DABEF9;}
+.services-inner-box {box-shadow : 0 7px 10px #EDE1FB;}
+.featured-food .food-item {background-color : #DABEF9;}
+
+/* table */
+
+tbody th #cc{background-color:#EDE1FB;}
+
+.backST {background-image:url('../images/back2.jpeg');}
+
+
+#table #tag th{background-color: #F5EDFF; height: 7px; width:5%;}

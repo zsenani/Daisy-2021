@@ -1,0 +1,46 @@
+.section {
+overflow : hidden;
+padding : 70px 80px;
+}
+
+.section-title h3 {
+font-size : 38px;
+font-weight : 500;
+line-height : 62px;
+margin : 0 0 25px;
+padding : 0;
+text-transform : none;
+}
+.services-inner-box {
+padding : 50px;
+background : #ffffff;
+margin-bottom : 30px;
+border-radius : 0 30px;
+text-align : center;
+}
+h2, h5 {
+margin : 0 0 20px 0;
+font-size : 1.4rem;
+line-height : normal;
+font-weight : normal;
+text-transform : uppercase;
+}
+img {
+max-width : 100%;
+}
+.text-center {
+text-align : center;
+}
+.col-md-3 {
+position : relative;
+min-height : 1px;
+padding-right : 15px;
+}
+@media (min-width: 992px) {
+.col-md-3 {
+float : left;
+}
+.col-md-3 {
+width : 25%;
+}
+}

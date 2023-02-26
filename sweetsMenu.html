@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sweets Menu</title>
+	<link rel="stylesheet" href="css/theme.css">
+	<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+	    <link rel="stylesheet" id="switcher-id" href="">
+
+</head>
+
+<body>
+	<div class="wrapper row0">
+  		<div id="topbar" class="hoc clear">
+  		<div class="theme-switches fl_left">
+            <div data-theme="orngTheme" class="switch" id="switch-1"></div>
+            <div data-theme="othTheme" class="switch" id="switch-2"></div>
+        </div>
+			<div> 
+      			<ul>
+        			<li id="searchform">
+          				<div>
+            				<form>
+              					
+                					<input type="text" placeholder="Enter search term&hellip;">
+               						 <button type="submit"><i class="fas fa-search"></i></button>
+              					
+           					 </form>
+          				</div>
+        			</li>
+      			</ul>
+			</div>
+ 		 </div>
+	</div>
+	
+	<div class="wrapper row1">
+  		<header id="header" class="hoc clear">
+    		<div id="logo" class="fl_left"> 
+      			<img id = 'logoo' src ='img/logo.png' alt='logo'>
+    		</div>
+			
+			<div class="topnav" id="myTopnav">
+  <a class="active" href="index.html">Home</a>
+  <a class="drop" href="menu.html">Menu</a>
+  <a href="shop.html">Orders</a>
+  <a href="Staff.html">Staff</a>
+  <a href="Reservation.html">Reservation</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+   			<nav id="mainav" class="fl_right"> 
+      <ul class="clear">
+        <li ><a href="index.html" accesskey="H">Home</a></li>
+        <li class="active"><a class="drop" href="menu.html">Menu</a>
+          <ul>
+            <li><a href="mealMenu.html">Meals</a></li>
+            <li class="active"><a href="sweetsMenu.html">Sweets</a></li>
+            <li><a href="drinksmenu.html">Drinks</a></li>
+          </ul>
+        </li>
+        <li><a href="shop.html">Orders</a></li>
+        <li><a href="Staff.html">Staff</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+
+      </ul>
+    </nav> 
+    	</header>
+	</div>
+	
+    <div class="row3">
+
+	<ul class="collapsed">
+  		<li><a href="index.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li>Sweets</li>
+	</ul>
+	
+
+	<section>
+		<div class="container">
+			<div class="heading text-center">
+				<h2>Sweets</h2>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="restmenuwrap">
+							<div class="restitem clearfix">
+							<img class="rm-thumb" src="img/1.jpg" alt="classic French Toast">
+							<h5>Classic French Toast</h5>
+							<p>Crusted homemade brioche bread & syrup<br>56SAR</p>
+						</div>
+						<div class="restitem clearfix">
+							<img class="rm-thumb" src= "img/2.jpg"  alt="twisted French Toast">
+							<h5>Twisted French Toast</h5>
+							<p>Crispy croissant, our delicious syrup <br>49SAR</p>
+						</div>
+						<div class="restitem clearfix">
+							<img class="rm-thumb" src="img/3.jpg"  alt="old fashioned">
+							<h5>Old fashioned</h5>
+							<p>Pancakes & syrup<br>46SAR</p>
+							<br>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="restmenuwrap">
+						<div class="restitem clearfix">
+							<img class="rm-thumb" src= "img/4.jpg"  alt="pistachio pancakes">
+							<h5>Pistachio pancakes</h5>
+							<p>Stacks of pancakes drizzled with pistachio sauce <br>56SAR</p>
+						</div>
+						<div class="restitem clearfix">
+							<img class="rm-thumb" src= "img/5.jpg"  alt="coconut granola">
+							<h5>Coconut granola</h5>
+							<p>Greek yogurt, ginger almond crumble & berries <br> 43SAR</p>
+						</div>
+						<div class="restitem clearfix">
+							<img class="rm-thumb" src= "img/6.jpg"  alt="minis">
+							<h5>Minis</h5>
+							<p>Five fried mini doughnuts, stuffed with cream pistachio <br>40SAR</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="restmenuwrap">
+						<div class="restitem clearfix">
+							<img class="rm-thumb" src= "img/7.jpg"  alt="guilty pleasure">
+							<h5>guilty pleasure</h5>
+							<p>chocolate fondant, warm peanut butter<br>46SAR</p>
+						</div>
+						<div class="restitem clearfix">
+							<img class="rm-thumb" src= "img/8.jpg"  alt="snickers wanna be">
+							<h5>snickers wanna be</h5>
+							<p>dark chocolate, milk chocolate mousse<br>46SAR</p>
+						</div>
+						<div class="restitem clearfix">
+							<img class="rm-thumb" src= "img/9.jpg"  alt="cheesecake">
+							<h5>Cheesecake</h5>
+							<p>Pistachio biscuit, cream cheese & pistachio sauce<br>61SAR</p>
+							<br>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+	</section>
+	
+	<br><br><br><br>
+	</div>
+<div id="m" class="wrapper row5">
+<footer>
+  <div id="copyright" class="hoc clear"> 
+   <div class="one_quarter first">
+      
+    
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+		<li><a class="faicon-instagram" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li> <a  id="backtotop" href='#'> <i class="fas fa-chevron-circle-up"></i></a></li>
+      </ul>
+     
+      
+     
+    </div>
+  </div>
+  </footer>
+</div>
+     <script src="themeC.js"></script>
+
+</body>
+</html>

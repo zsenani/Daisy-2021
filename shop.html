@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="utf-8"/>
+<title>Order</title>
+<link rel='stylesheet' href='layout/styles/style.css' type='text/css' media='all'/>
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" id="switcher-id" href="">
+<script src="OrderButton.js" async></script>
+<script src="reservationJS.js" ></script>
+</head>
+<body class="woocommerce" onload="updateTables()">
+<div id="page">
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear">
+  <div class="theme-switches fl_left">
+            <div data-theme="orngTheme" class="switch" id="switch-1"></div>
+            <div data-theme="othTheme" class="switch" id="switch-2"></div>
+        </div>
+    <div class="fl_left"> 
+    </div>
+    <div class="fl_right"> 
+      <ul class="nospace">
+        <li id="searchform">
+          <div>
+            <form action="#" method="post">
+              
+                <input type="text" placeholder="Enter search term&hellip;">
+                <button type="submit"><i class="fas fa-search"></i></button>
+              
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+      <img id = 'logoo' src ='img/logo.png' alt='logo'>
+    </div>
+	
+	<div class="topnav" id="myTopnav">
+  <a  href="index.html">Home</a>
+  <a class="drop" href="menu.html">Menu</a>
+  <a class="active" href="shop.html">Orders</a>
+  <a href="Staff.html">Staff</a>
+  <a href="Reservation.html">Reservation</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    <nav id="mainav" class="fl_right"> 
+      <ul class="clear">
+        <li ><a href="index.html" accesskey="H">Home</a></li>
+        <li><a class="drop" href="menu.html">Menu</a>
+          <ul>
+            <li><a href="mealMenu.html">Meals</a></li>
+            <li><a href="sweetsMenu.html">Sweets</a></li>
+            <li><a href="drinksmenu.html">Drinks</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="shop.html">Orders</a></li>
+        <li><a href="Staff.html">Staff</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+
+      </ul>
+    </nav>  
+  </header>
+  
+  </div>
+		<div id="content" class="site-content row3 wrapper">
+			<div id="primary" class="content-area column full">
+				<main id="main">
+				 <ul class="collapsed">
+                <li><a href="index.html">Home</a></li>
+                <li>Order</li>
+                </ul>
+				<br>
+				
+				<div id="list1">
+				<div>
+				
+                <section class="hoc container clear"> 
+                <div class="center btmspace-80">
+                   <form class="fl_right">
+				<select id="tableNum" name="orderby" class="orderby ">
+						<option value="menu_order" selected="selected">Select your Table</option>
+					</select>
+				</form> 
+				<br><br><br>
+                <h6 class="heading underline font-x2">Hot Beverages</h6>
+                <a class="button fl_right" onclick="sortList('list1')">Sort List</a>
+                
+             
+                </div>
+                
+                <br>
+                
+                <div class="shop-items">
+				<ul  class="products">
+				
+				    <li class="product shop-item" order="1">
+					<img class="shop-item-image" src="img/h3.jpg" alt="coffee">
+					<h3 class="shop-item-title">Espresso</h3>
+					<span class="price shop-item-price">16.00 SR</span>
+					<a class="button shop-item-button btn btn-primary" onclick="ready('0')">Add to cart</a>
+					</li>
+					
+					<li class="product shop-item" order="3">
+					<img class="shop-item-image" src="img/h1.jpg" alt="coffee">
+					<h3 class="shop-item-title">Black coffee</h3>
+					<span class="price shop-item-price">20.00 SR</span>
+					<a class="button shop-item-button btn btn-primary" onclick="ready('1','2')">Add to cart</a>
+					</li>
+
+					<li class="product shop-item" order="2">
+					<img class="shop-item-image" src="img/h4.jpg" alt="tea">
+					<h3 class="shop-item-title">Daisy Tea</h3>
+					<span class="price shop-item-price">18.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary " onclick="ready('2','1')" >Add to cart</a>
+					</li>
+					
+					
+					<li class="last product shop-item" order="4">
+				    <img class="shop-item-image" src="img/h2.jpg" alt="coffee">
+					<h3 class="shop-item-title">Cappuccino</h3>
+					<span class="price shop-item-price">23.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary" onclick="ready('3','3')">Add to cart</a>
+					</li>
+					
+
+				</ul>
+				</section>
+                </div>
+                <div>
+				
+                <section class="hoc container clear"> 
+                <div class="center btmspace-80">
+                <h6 class="heading underline font-x2">Cold Beverages</h6>
+                </div>
+                
+				<ul class="products">
+				
+					<li class="product shop-item" order="7">
+					<img class="shop-item-image" src="img/c3.jpg" alt="coffee">
+					<h3 class="shop-item-title">Iced Black coffee</h3>
+					<span class="price shop-item-price">22.00 SR</span>
+					<a class="button shop-item-button btn btn-primary" onclick="ready('0','2')">Add to cart</a>
+					</li>
+
+					<li class="product shop-item" order="5">
+					<img class="shop-item-image" src="img/c4.jpg" alt="water">
+					<h3 class="shop-item-title">Water</h3>
+					<span class="price shop-item-price">5.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary" onclick="ready('1','0')">Add to cart</a>
+					</li>
+					
+					<li class="product shop-item" order="6">
+					<img class="shop-item-image" src="img/c2.jpg" alt="soft">
+					<h3 class="shop-item-title">Soft Drinks</h3>
+					<span class="price shop-item-price">17.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary" onclick="ready('2','1')">Add to cart</a>
+					</li>
+					
+					<li class="last product shop-item" order="8">
+					<img class="shop-item-image" src="img/c1.jpg" alt="juice">
+					<h3 class="shop-item-title">Orange Juice</h3>
+					<span class="price shop-item-price">27.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary" onclick="ready('3','3')">Add to cart</a>
+					</li>
+
+				</ul>
+				</section>
+                </div>
+                </div>
+                <div id="list3">
+                
+                
+                <div class="wrapper row2">
+                
+				
+                <section class="hoc container clear"> 
+                
+                <a class="button fl_right" onclick="sortList('list3')">Sort List</a>
+                <div class="center btmspace-80">
+                <h6 class="heading underline font-x2">Starters & Poke</h6>
+                </div>
+                
+               
+				<ul class="products mid">
+				
+					<li class="first product shop-item" order="1">
+					<img class="shop-item-image" src="img/pok2.jpg" alt="starters">
+					<h3 class="shop-item-title">Water Melon Salad</h3>
+					<span class="price shop-item-price">56.00 SR</span>
+					<a class="button shop-item-button btn btn-primary" onclick="ready('0','0')">Add to cart</a>
+					</li>
+
+					
+					<li class="product shop-item" order="3">
+					<img class="shop-item-image" src="img/pok1.jpg" alt="starters">
+					<h3 class="shop-item-title">Salmon Poke Powl</h3>
+					<span class="price shop-item-price">77.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary" onclick="ready('1','2')">Add to cart</a>
+					
+					
+					<li class="product shop-item" order="2">
+					<img class="shop-item-image" src="img/pok3.jpg" alt="starters">
+					<h3 class="shop-item-title">Vegan Poke Bowl</h3>
+					<span class="price shop-item-price">59.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary" onclick="ready('2','1')">Add to cart</a>
+					</li>
+				</ul>
+				</section>
+				
+                <section class="hoc container clear"> 
+                <div class="center btmspace-80">
+                <h6 class="heading underline font-x2">Sandwiches</h6>
+                </div>
+                
+                
+				<ul class="products mid">
+				
+					<li class="first product shop-item" order="5">
+					<img class="shop-item-image" src="img/san1.jpg" alt="Sandwich">
+					<h3 class="shop-item-title">Roasted Brisket</h3>
+					<span class="price shop-item-price">65.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary" onclick="ready('0','1')">Add to cart</a>
+					</li>
+
+					<li class="product shop-item" order="4">
+					<img class="shop-item-image" src="img/san2.jpg" alt="Sandwich">
+					<h3 class="shop-item-title">I AM Vegetarian</h3>
+					<span class="price shop-item-price">61.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary" onclick="ready('1','0')">Add to cart</a>
+					</li>
+					
+					<li class="product shop-item" order="6">
+					<img class="shop-item-image" src="img/san3.jpg" alt="Sandwich">
+					<h3 class="shop-item-title">Burrata</h3>
+					<span class="price shop-item-price">93.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary" onclick="ready('2','2')">Add to cart</a>
+					</li>
+				</ul>
+				    <section class="hoc container clear"> 
+                <div class="center btmspace-80">
+                <h6 class="heading underline font-x2">Eggs</h6>
+                </div>
+                <br>
+				<ul  class="products mid">
+				
+					<li class="first product shop-item" order="8">
+					<img class="shop-item-image" src="img/eg2.jpg" alt="egg">
+					<h3 class="shop-item-title">The Benedict</h3>
+					<span class="price shop-item-price">48.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary" onclick="ready('0','1')">Add to cart</a>
+					</li>
+
+					<li class="product shop-item" order="7">
+					<img class="shop-item-image" src="img/eg1.jpg" alt="egg">
+					<h3 class="shop-item-title">Partical Bun</h3>
+					<span class="price shop-item-price">43.00 SR</span>
+					<a  class="button shop-item-button btn btn-primary" onclick="ready('1','0')">Add to cart</a>
+					</li>
+					
+					<li class="product shop-item" order="9">
+					<img class="shop-item-image" src="img/eg3.jpg" alt="egg">
+					<h3 class="shop-item-title">Typical Avocado</h3>
+					<span class="price shop-item-price">60.00 SR</span>
+					<a class="button shop-item-button btn btn-primary" onclick="ready('2','2')">Add to cart</a>
+					</li>
+				</ul>
+				</section>
+				</section>
+                </div>
+              </div>
+                
+                <br>
+                
+                 <div class="wrapper row3">
+				
+            
+				<section class="hoc container clear"> 
+                <div class="center btmspace-80">
+                <a class="button fl_right" onclick="sortList('list6');sortList('list7');sortList('list8');">Sort List</a>
+                <h6 class="heading underline font-x2">Sweets</h6>
+                </div>
+                
+                <br>
+				<ul id="list6" class="products mid">
+				
+					
+					<li class="product shop-item" order="2">
+					<a href="#">
+					<img  class="shop-item-image" src="img/sw5.jpg" alt="sweet">
+					<h3 class="shop-item-title">Coconut Granola</h3>
+					
+					<span class="price shop-item-price">43.00 SR</span>
+					</a><a  class="button shop-item-button btn btn-primary" onclick="ready('0','1')">Add to cart</a>
+					
+					</li>
+
+					<li class="product shop-item" order="1">
+					<a href="#">
+					<img class="shop-item-image" src="img/sw7.jpg" alt="sweet">
+					<h3 class="shop-item-title">Minis</h3>
+					<span class="price shop-item-price">40.00 SR</span>
+					</a><a  class="button shop-item-button btn btn-primary" onclick="ready('1','0')">Add to cart</a>
+					</li>
+					
+					<li class="product shop-item" order="3">
+					<a href="#">
+					<img class="shop-item-image" src="img/sw2.jpg" alt="sweet">
+					<h3 class="shop-item-title">Old Fashioned</h3>
+					<span class="price shop-item-price">46.00 SR</span>
+					</a><a class="button shop-item-button btn btn-primary" onclick="ready('2','2')">Add to cart</a>
+					</li>
+				</ul>	
+				
+				<ul id="list7" class="products mid">
+				   
+					<li class="product shop-item" order="6">
+					<a href="#">
+					<img class="shop-item-image" src="img/sw3.jpg" alt="sweet">
+					<h3 class="shop-item-title">Twisted French Toast</h3>
+					<span class="price shop-item-price">49.00 SR</span>
+					</a><a  class="button shop-item-button btn btn-primary" onclick="ready('0','2')">Add to cart</a>
+					</li>
+						<li class="product shop-item" order="5">
+					<a href="#">
+					<img class="shop-item-image" src="img/sw6.jpg" alt="sweet">
+					<h3 class="shop-item-title">Guilty Pleasure</h3>
+					<span class="price shop-item-price">46.00 SR</span>
+					</a><a  class="button shop-item-button btn btn-primary" onclick="ready('1','1')">Add to cart</a>
+					</li>
+
+					<li class="product shop-item" order="4">
+					<a href="#">
+					<img class="shop-item-image" src="img/swe7.jpg" alt="sweet">
+					<h3 class="shop-item-title">Snickers Wanna Be</h3>
+					<span class="price shop-item-price">46.00 SR</span>
+					</a><a class="button shop-item-button btn btn-primary" onclick="ready('2','0')">Add to cart</a>
+					</li>
+				</ul>
+					
+				<ul id="list8" class="products mid">
+				
+					 <li class="product shop-item" order="7">
+					<a href="#">
+					<img class="shop-item-image" src="img/sw1.jpg" alt="sweet">
+					<h3 class="shop-item-title">Classic French Toast</h3>
+					<span class="price shop-item-price">56.00 SR</span>
+					</a><a class="button shop-item-button btn btn-primary" onclick="ready('0','0')">Add to cart</a>
+					</li>
+					
+					<li class="product shop-item" order="8">
+					<a href="#">
+					<img class="shop-item-image" src="img/sw4.jpg" alt="sweet">
+					<h3 class="shop-item-title">Pistachio Pancakes</h3>
+					<span class="price shop-item-price">56.00 SR</span>
+					</a><a class="button shop-item-button btn btn-primary" onclick="ready('1','1')">Add to cart</a>
+					</li>
+					
+					<li class="last product shop-item" order="9">
+					<a href="#">
+					<img class="shop-item-image" src="img/sw8.jpg" alt="sweet">
+					<h3 class="shop-item-title">Cheesecake</h3>
+					<span class="price shop-item-price">61.00 SR</span>
+					</a><a  class="button shop-item-button btn btn-primary" onclick="ready('2','2')">Add to cart</a>
+					</li>
+				</ul>
+				</div>
+				</div>
+				
+				<div class="tables container">
+<section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price c cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">0 SR</span>
+            </div>
+            <div id="endButton">
+            <a  id="order" class="btn btn-primary btn-purchase button" type="button" onclick="addTable()">PURCHASE</a>
+            </div>
+        </section>	
+				</div>
+				<br>
+<br>
+<div class="tables container">
+<table id="myTable">
+  <tr>
+    <td class="cart-header">TABLE NUMBER</td>
+    <td class="cart-header">TOTAL PRICE</td>
+    <td class="cart-header">PRINT INVOICE</td>
+  </tr>
+</table>
+</div>
+<br>
+
+
+</div>
+</div>
+				</section>
+                </div>
+                
+                
+				</div>
+				</main>
+				</div>
+				<!-- #main -->
+			</div>
+			<!-- #primary -->
+		</div>
+		<!-- #content -->
+	</div>
+	
+	<!-- .container -->
+	<div id="m" class="wrapper row5">
+<footer>
+  <div id="copyright" class="hoc clear"> 
+   <div class="one_quarter first">  
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+		<li><a class="faicon-instagram" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li> <a  id="backtotop" href='#'> <i class="fas fa-chevron-circle-up"></i></a></li>
+      </ul>
+     
+    </div>
+  </div>
+  </footer>
+</div>
+     <script src="themeC.js"></script>
+     <script src="OrderButton.js"></script>
+     <script src="orderJS.js"></script>
+     <script src="reservationJS.js" ></script>
+
+</body>
+</html>

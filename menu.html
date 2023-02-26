@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<title>Menu</title>
+	<link href="layout.css" rel="stylesheet">
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" id="switcher-id" href="">
+
+</head>
+<body>
+
+	<div class="wrapper row0">
+  		<div id="topbar" class="hoc clear">
+  		<div class="theme-switches fl_left">
+            <div data-theme="orngTheme" class="switch" id="switch-1"></div>
+            <div data-theme="othTheme" class="switch" id="switch-2"></div>
+        </div>
+			<div> 
+      			<ul>
+        			<li id="searchform">
+          				<div>
+            				<form>
+              					
+                					<input type="text" placeholder="Enter search term&hellip;">
+               						 <button type="submit"><i class="fas fa-search"></i></button>
+              					
+           					 </form>
+          				</div>
+        			</li>
+      			</ul>
+			</div>
+ 		 </div>
+	</div>
+	
+	<div class="wrapper row1">
+  		<header id="header" class="hoc clear">
+    		<div id="logo" class="fl_left"> 
+      			<img id = 'logoo' src ='img/logo.png' alt='logo'>
+    		</div>
+			
+			<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a class="drop active" href="menu.html">Menu</a>
+  <a href="shop.html">Orders</a>
+  <a href="Staff.html">Staff</a>
+  <a href="Reservation.html">Reservation</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+   			<nav id="mainav" class="fl_right"> 
+      <ul class="clear">
+        <li ><a href="index.html" accesskey="H">Home</a></li>
+        <li class="active"><a class="drop " href="menu.html">Menu</a>
+          <ul>
+            <li><a href="mealMenu.html">Meals</a></li>
+            <li><a href="sweetsMenu.html">Sweets</a></li>
+            <li><a href="drinksmenu.html">Drinks</a></li>
+          </ul>
+        </li>
+        <li ><a href="shop.html">Orders</a></li>
+        <li><a href="Staff.html">Staff</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+
+      </ul>
+    </nav> 
+    	</header>
+	</div>
+	
+	<div class="row3">
+
+	<ul class="collapsed">
+  		<li><a href="index.html">Home</a></li>
+  		<li>Menu</li>
+	</ul>
+	
+	
+    <div class="container"> 
+      	<div class="items">
+        	<p class="top"><img class="pic" src="img/food.png"  alt=""></p>
+        	<p class="link"><a href="mealMenu.html">Meals &raquo;</a></p>
+      	</div>
+      	<div class="items">
+        	<p class="top"><img class="pic" src="img/cake.png"  alt=""></p>
+        	<p class="link"><a href="sweetsMenu.html">Sweets &raquo;</a></p>
+      	</div>
+      	<div class="items">
+        	<p class="top"><img class="pic" src="img/coffee-cup.png"  alt=""></p>
+        	<p class="link"><a href="drinksMenu.html">Drinks &raquo;</a></p>
+		</div>
+	</div>
+	</div>
+	<div id="m" class="wrapper row5">
+
+  <div id="copyright" class="hoc clear"> 
+  <footer>
+   <div class="one_quarter first">  
+     <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+		<li><a class="faicon-instagram" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li> <a  id="backtotop" href='#'> <i class="fas fa-chevron-circle-up"></i></a></li>
+      </ul>
+     
+    </div>
+  </div>
+  </footer>
+</div>
+     <script src="themeC.js"></script>
+
+</body>
+</html>
